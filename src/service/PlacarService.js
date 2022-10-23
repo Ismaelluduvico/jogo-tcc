@@ -6,8 +6,8 @@ const placarData = require('../data/PlacarData')
  };
 
 //serviço de adicionar um placar
- exports.addPlacar = function (pntos, aluno_id, capitulo_id, acertos, performance) {
-    return placarData.addPlacar(pntos, aluno_id, capitulo_id, acertos, performance);
+ exports.addPlacar = function (pontos, aluno_id, capitulo_id, acertos, performance) {
+    return placarData.addPlacar(pontos, aluno_id, capitulo_id, acertos, performance);
  };
 
 //serviço de mostrar um placar

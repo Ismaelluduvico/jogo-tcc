@@ -2,14 +2,14 @@ const placarService = require('../service/PlacarService')
 
 //Adicionar um placar
 exports.postPlacar = async (req, res, next) => {
-    const {pntos, aluno_id, capitulo_id, acertos, performance} = req.body
-    await placarService.addPlacar(pntos, aluno_id, capitulo_id, acertos, performance)
+    const {pontos, aluno_id, capitulo_id, acertos, performance} = req.body
+    await placarService.addPlacar(pontos, aluno_id, capitulo_id, acertos, performance)
     res.status(201). send("")
 };
 
 //Buscar todos os placares
 exports.getPlacar = async(req, res, next) => {
-    const placares = await placarService.getPlacar()
+    const placares = await placarService.getPlacares()
     res.json(placares)
 };
 
