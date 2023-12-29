@@ -8,8 +8,9 @@ function Home() {
         <div className='conteiner'>
             <div className='form'>
                 <h1>ALUNO</h1>
-                <div style={{flexDirection:'column', paddingBottom:10, justifyContent:'space-between', width:'80%', height:150}}>
+                <div style={{flexDirection:'column', paddingBottom:10, justifyContent:'space-between', width:'80%', height:200}}>
                 <Input
+                    labelAlignment='left'
                     id="input-component-1"
                     label="Usuário"
                     placeholder="Informe o nome de Usuário"
@@ -17,6 +18,7 @@ function Home() {
                     type='text'
                 />
                 <Input
+                    labelAlignment='left'
                     id="input-component-2"
                     label="Senha"
                     placeholder="Informe a Senha"
@@ -25,7 +27,6 @@ function Home() {
                 />
                     <div style={{justifyContent:'space-between', alignSelf:'center', width:'80%', paddingTop:10}}>
                         <a href=''>Criar conta</a>
-                        <a href=''>Sou professor</a>
                     </div>
                 </div>
                 <Button
